@@ -3,7 +3,7 @@ cask "certreader" do
   name "certreader"
   desc "Output detailed information about TLS certificates..."
   homepage "https://github.com/jonhadfield/certreader"
-  version "0.0.2"
+  version "0.0.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,11 +14,11 @@ cask "certreader" do
   on_macos do
     on_intel do
       url "https://github.com/jonhadfield/certreader/releases/download/v#{version}/certreader_#{version}_darwin_amd64.tar.gz"
-      sha256 "aca0276363f2d7c43f7741b6954444ec85c8c6b799cd763935e3149b7ace7c46"
+      sha256 "1e5224babcb78450dc80c74c7fc1b9e1a36459885e5b04cc0d3db1d9e51fbf93"
     end
     on_arm do
       url "https://github.com/jonhadfield/certreader/releases/download/v#{version}/certreader_#{version}_darwin_arm64.tar.gz"
-      sha256 "c18f74c16ce4c7ea3da92ba57783601291144e83eb0af02b27ca0576a123a5a7"
+      sha256 "9d335ef96d52f2f24e31f25fd5b9e6151b3b0542725e9fd432db227678ace64a"
     end
   end
 
