@@ -5,20 +5,20 @@
 class Certreader < Formula
   desc "Output detailed information about TLS certificates..."
   homepage "https://github.com/jonhadfield/certreader"
-  version "0.25.3"
+  version "0.25.4"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/jonhadfield/certreader/releases/download/v0.25.3/certreader_0.25.3_darwin_amd64.tar.gz"
-    sha256 "ce5ff4663b7f799bb2c86f3ce249dd1092ffe5c78939cb18b412c53a4af10def"
+    url "https://github.com/jonhadfield/certreader/releases/download/v0.25.4/certreader_0.25.4_darwin_amd64.tar.gz"
+    sha256 "f608cfac320f7e1b8ecf63d4fbe4389a2b28e9da3e86efb2b6e96992714c1739"
 
     define_method(:install) do
       bin.install "certreader"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/jonhadfield/certreader/releases/download/v0.25.3/certreader_0.25.3_darwin_arm64.tar.gz"
-    sha256 "e6cabf75324287ba1030f35993abdb251b05448ea16243de6ee666e20eaec6b5"
+    url "https://github.com/jonhadfield/certreader/releases/download/v0.25.4/certreader_0.25.4_darwin_arm64.tar.gz"
+    sha256 "c506263172708954fdafbc065393644fe10a4a53f733b11c054227c2872925bb"
 
     define_method(:install) do
       bin.install "certreader"
